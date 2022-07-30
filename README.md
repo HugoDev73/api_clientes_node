@@ -4,7 +4,7 @@
 ### Pre-requisitos 📋
 
 ```
-SQL, Server,Node Js, npm
+SQL Server,Node Js, npm
 ```
 
 ### Instalación 🔧
