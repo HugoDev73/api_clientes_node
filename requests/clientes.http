@@ -1,0 +1,39 @@
+
+
+### Obtener lista de clientes
+GET http://localhost:3000/api/clientes
+
+### Guardar un nuevo cliente
+POST http://localhost:3000/api/clientes
+Content-Type: application/json
+{
+  "nombre": "Santiago",
+  "apellido_paterno": "Perez",
+  "apellido_materno": "Martinez",
+  "rfc": "MEGP010712U77",
+  "curp": "GASA010708HGTRLN09",
+  "fecha_alta": "2022/07/21"
+}
+
+### actualizar un cliente 
+PUT http://localhost:3000/api/clientes/5
+Content-Type: application/json
+{
+    "nombre": "Leo Daniel",
+    "apellido_paterno": "Mendoza",
+    "apellido_materno": "H",
+    "rfc": "MEHH921001GT8",
+    "curp": "123456789123456789"
+}
+
+### obtener un cliente por ID
+GET http://localhost:3000/api/clientes/6
+
+### eliminar un cliente por ID
+DELETE http://localhost:3000/api/clientes/6
+
+### obtener el listado de cuentas
+GET http://localhost:3000/api/cuentas
+
+### obtener el detalle de un cliente y su cuenta
+GET http://localhost:3000/api/clientes/detalle/5
